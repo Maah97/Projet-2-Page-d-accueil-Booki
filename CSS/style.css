@@ -1,0 +1,277 @@
+*{
+    box-sizing: border-box;
+    /* margin: 0px;
+    padding: 0px;
+} */
+
+body {
+    width: 1440px;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'raleway';
+}
+
+/* Style du header */
+
+header {
+    height: 79px;
+    width: 100%;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+
+}
+
+.logo {
+    width: 161px;
+    height: 79;
+    padding: 30px 50px 30px 50px;
+}
+
+.logo img {
+    width: 61px;
+    height: 19px;
+}
+
+.menu {
+    width: 344px;
+    height: 35px;
+    margin-left: auto;
+    padding: 0px 50px 0px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+   
+.hebergement {
+    width: 113px;
+    height: 35px;
+}
+
+.activites {
+    width: 63px;
+    height: 35px;
+}
+
+.menu a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    margin-top: 16px;
+}
+
+.hebergement:hover, .activites:hover {
+    border-top: 2px #0065FC solid;
+    a {
+        color: #0065FC;
+    }
+}
+
+/* ------------Style-contenu-général ou body-----------------*/
+
+main {
+    width: 100%;
+    padding: 0px 50px 0px 50px;
+    display: flex;
+}
+
+/* 1. Style info-groupe */
+
+.InfoGroup {
+    width: 1340px;
+    height: 281px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.headline {
+    height: 53px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h1 {
+    display: block;
+    height: 26px;
+    margin: 0px;
+    padding: 0px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 25.83px;
+}
+
+.headline p {
+    display: block;
+    height: 19px;
+    margin: 0px;
+    padding: 0px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18.78px;
+}
+
+.search-bar {
+    width: 379px;
+    height: 49px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px #f2f2f2 solid;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.icone-adrresse {
+    width: 50px;
+    height: 49px;
+    border-radius: 15px 0px 0px 15px;
+    border: 1px #f2f2f2 solid;
+    background-color: #D9D9D9;
+}
+
+.icone-adrresse i {
+    width: 14px;
+    height: 18px;
+    position: relative;
+    top: 15px;
+    left: 18px;
+}
+
+.texte-recherche {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.texte-recherche p {
+    width: 147px;
+    height: 21px;
+    margin: 0px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21.13px;
+    text-align: center;
+}
+
+.btn-recherche {
+    cursor: pointer;
+    width: 132px;
+    height: 49px;
+    border-radius: 0px 15px 15px 0px;
+    border: 1px #0065FC solid;
+    padding: 15px 16px 15px 16px;
+    background-color: #0065FC;
+    color: #f2f2f2;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21.13px;
+}
+
+.filterbar {
+    width: 758px;
+    height: 50px;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.filtres {
+    width: 54px;
+    height: 21px;
+    margin: auto 0px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21.13px;
+    text-align: center;
+}
+
+.filter {
+    height: 50px;
+    border-radius: 25px;
+    border: 2px #D9D9D9 solid;
+    padding: 4px 19px 4px 19px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter:hover {
+    background-color: #DEEBFF;
+}
+
+.economique {
+    width: 173px;
+}
+
+.familial {
+    width: 134px;
+}
+
+.romantique {
+    width: 170px;
+}
+
+.nos-pepites {
+    width: 167px;
+}
+
+.filter i {
+    width: 22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filter p {
+    height: 20px;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 19.96px;
+    text-align: center;
+}
+
+.economique p {
+    width: 103px;
+}
+
+.familial p {
+    width: 64px;
+}
+
+.romantique p {
+    width: 100px;
+}
+
+.nos-pepites p {
+    width: 97px;
+}
+
+.infobar {
+    height: 24px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.infobar p {
+    display: block;
+    margin: 0px;
+    width: 1306px;
+    height: 19px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18.78px;
+}
+
+.cercle-icone-i {
+    width: 24px;
+    height: 24px;
+    border: 1px #D9D9D9 solid;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
