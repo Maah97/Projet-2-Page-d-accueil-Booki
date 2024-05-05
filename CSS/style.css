@@ -528,6 +528,7 @@ h2:nth-child(even){
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-bottom: 30px;
 }
 
 .SectionActivites h2 {
