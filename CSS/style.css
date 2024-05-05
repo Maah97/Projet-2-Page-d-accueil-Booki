@@ -571,3 +571,37 @@ h2:nth-child(even){
     font-size: 16px;
     line-height: 18.78px;
 }
+
+/* ---------------------------------------------STYLE FOOTER---------------------------------------------------- */
+
+footer {
+    width: 100%;
+    height: 163px;
+    background-color: #F2F2F2;
+    display: flex;
+}
+
+footer h2 {
+    margin: 0px;
+    color: black;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21.13px;
+}
+
+footer a {
+    display: block;
+    margin: 15px 0px 0px 0px;
+    color: black;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18.78px;
+}
+
+.apropos, .nos-hebergements, .assistance {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 33.3335821%;
+    padding: 20px;
+}
