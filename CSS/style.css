@@ -1,25 +1,28 @@
 *{
     box-sizing: border-box;
-    /* margin: 0px;
-    padding: 0px;
-} */
-
-body {
-    width: 1440px;
-    margin: 0px;
-    padding: 0px;
     font-family: 'raleway';
 }
 
+body {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0;
+    padding: 0;
+}
 /* Style du header */
 
 header {
     height: 79px;
     width: 100%;
     display: flex;
-    /* justify-content: center;
-    align-items: center; */
-
 }
 
 .logo {
@@ -55,7 +58,7 @@ header {
 .menu a {
     display: block;
     text-decoration: none;
-    color: black;
+    color: inherit;
     text-align: center;
     margin-top: 16px;
 }
@@ -71,8 +74,7 @@ header {
 
 main {
     width: 100%;
-    padding: 0px 50px 0px 50px;
-    display: flex;
+    padding: 0 50px;
 }
 
 /* 1. Style info-groupe */
@@ -83,6 +85,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-bottom: 35px;
 }
 
 .headline {
@@ -116,16 +119,29 @@ h1 {
     width: 379px;
     height: 49px;
     display: flex;
-    justify-content: space-between;
-    border: 1px #f2f2f2 solid;
     border-radius: 15px 15px 15px 15px;
+}
+
+.champ-saisie-recherche {
+    border: 1px #f2f2f2 solid;
+    width: 195px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.13px;
+}
+
+.champ-saisie-recherche:focus {
+    outline: none;
 }
 
 .icone-adrresse {
     width: 50px;
     height: 49px;
     border-radius: 15px 0px 0px 15px;
-    border: 1px #f2f2f2 solid;
     background-color: #D9D9D9;
 }
 
@@ -258,7 +274,7 @@ h1 {
 
 .infobar p {
     display: block;
-    margin: 0px;
+    margin-top: 2.5px;
     width: 1306px;
     height: 19px;
     font-weight: 400;
@@ -274,4 +290,227 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* ---------------------------------------------STYLE SECTION GROUPE DES OFFRES-------------------------------------------------------- */
+
+.SectionGroup {
+    height: 614px;
+    width: 1340px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* I. ----Style presentation des offres pour l'hébergement à marseille-----*/
+
+.offers-main {
+    height: 614px;
+    width: 871px;
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* 1. --Gestion du texte des cartes des offres */
+
+.offers-main h2{
+    width: 811px;
+    height: 26px;
+    margin: 0px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 25.83px;
+}
+
+h2:nth-child(even){
+    cursor: pointer;
+}
+
+.card-main-txt h3 {
+    width: 220.3px;
+    height: 19px;
+    margin: 0px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18.78px;
+}
+
+.card-main-txt p {
+    width: 220.33px;
+    height: 16px;
+    margin: 0px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.44px;
+}
+
+.card-main-txt p span {
+    font-weight: 600;
+}
+
+/* 2. -----Gestion de la première et deuxième rangée des cartes des offres --------*/
+
+.box-offers-main {
+    width: 811px;
+    height: 207.25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-main {
+    width: 250.33px;
+    height: 207.25px;
+    border-radius: 20px;
+    padding: 0px 0px 15px 0px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 3px 15px 0 rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-main img{
+    width: 250.33px;
+    height: 124px;
+    border-radius: 20px 20px 0px 0px;
+    border: 5px #FFFFFF solid;
+    object-fit: cover;
+}
+
+.card-main-txt {
+    width: 250.33px;
+    height: 64.25px;
+    padding: 0px 15px 0px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.etoiles {
+    width: 81px;
+    height: 13.25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.etoiles i {
+    width: 14.29px;
+    height: 13.25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* II.-----Style presentation des offres pour les plus populaires-----*/
+
+.offers-sponsored {
+    height: 614px;
+    width: 429px;
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.titre-offers-sponsored {
+    width: 369px;
+    height: 26px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.titre-offers-sponsored i {
+    width: 18px;
+    height: 15.75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-main-2 {
+    width: 369px;
+    height: 146px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 3px 15px 0 rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-main-2 img{
+    width: 123px;
+    height: 146px;
+    border-radius: 20px 0px 0px 20px;
+    border-top: 5px #FFFFFF solid;
+    border-bottom: 5px #FFFFFF solid;
+    border-left: 5px #FFFFFF solid;
+    object-fit: cover;
+}
+
+.card-main-txt-2 {
+    width: 246px;
+    height: 136px;
+    padding: 10px 5px 5px 15px;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.txt {
+    width: 226px;
+    height: 85px;
+}
+
+.etoiles-2 {
+    width: 81px;
+    height: 13.25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.etoiles-2 i {
+    width: 14.29px;
+    height: 13.25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ----------Gestion du texte---------- */
+
+.titre-offers-sponsored h2 {
+    width: 300.31;
+    height: 26px;
+    margin: 0px;
+    font-weight: 700px;
+    font-size: 22px;
+    line-height: 25.83px;
+}
+
+.txt h3 {
+    margin: 0px 0px 5px 0px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18.78px;
+}
+
+.txt p {
+    width: 226px;
+    height: 16px;
+    margin: 0px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.44px;
+}
+
+.txt p span {
+    font-weight: 600;
 }

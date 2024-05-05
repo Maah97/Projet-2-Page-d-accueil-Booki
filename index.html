@@ -13,23 +13,27 @@
     <link rel="stylesheet" href="./CSS/style.css">
 </head>
 <body>
+<div class="main-container">
 <!-- Header du site Booki -->
     <header>
         <div class="logo">
             <img src="images/logo/Booki.png" alt="Logo du site Booki">
         </div>
-        <div class="menu">
+        <nav class="menu">
             <div class="hebergement">
-                <a href="#">Hébergement</a>
+                <a href="#Hebergement-marseille">Hébergement</a>
             </div>
             <div class="activites">
                 <a href="#">Activités</a>
             </div>
-        </div>
+        </nav>
     </header>
 
 <!-- Body ou container de la page d'accueil Booki -->
     <main>
+
+    <!-- Section Info-group -->
+
         <section class="InfoGroup">
             <div class="headline">
                 <h1>Trouvez votre hébergement pour des vacances de Rêve</h1>
@@ -39,10 +43,10 @@
                 <div class="icone-adrresse">
                     <i class="fa-solid fa-location-dot fa-lg" style="color: #000000;"></i>
                 </div>
-                <div class="texte-recherche">
-                   <p>Marseille, France</p>
-                </div>
-                <button class="btn-recherche">Rechercher</button>
+                <form class="texte-recherche">
+                    <input type="text" class="champ-saisie-recherche" placeholder="Choix ville">
+                    <button class="btn-recherche">Rechercher</button>
+                </form>
             </div>
             <ul class="filterbar">
                 <li class="filtres">Filtres</li>
@@ -71,18 +75,167 @@
             </div>
         </section>
 
-        <section class="SectionGroup">
+        <!-- Code section group offres hébergements marseille -->
 
+        <section class="SectionGroup">
+            <div class="offers-main">
+                <h2 id="Hebergement-marseille">Hébergements à Marseille</h2>
+                <div class="box-offers-main">
+                    <div class="card-main">
+                        <img src="images/hebergements/fred-kleber.jpg" alt="hotel du port">
+                        <div class="card-main-txt">
+                            <h3>Hôtel du port</h3>
+                            <p>Nuit à partir de 52<span>€</span></p>
+                            <div class="etoiles">
+                                <i class="fa-solid fa-star fa-sm" style="color: #0065ef;"></i>
+                                <i class="fa-solid fa-star fa-sm" style="color: #0065ef;"></i>
+                                <i class="fa-solid fa-star fa-sm" style="color: #0065ef;"></i>
+                                <i class="fa-solid fa-star fa-sm" style="color: #0065ef;"></i>
+                                <i class="fa-solid fa-star fa-sm" style="color: #f2f2f2;"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-main">
+                        <img src="images/hebergements/febrian-zakaria.jpg" alt="hotel du port">
+                        <div class="card-main-txt">
+                            <h3>Hôtel chez Amina</h3>
+                            <p>Nuit à partir de 96 <span>€</span></p>
+                            <div class="etoiles">
+                                <i class="fa-solid fa-star fa-sm" style="color: #0065ef;"></i>
+                                <i class="fa-solid fa-star fa-sm" style="color: #0065ef;"></i>
+                                <i class="fa-solid fa-star fa-sm" style="color: #0065ef;"></i>
+                                <i class="fa-solid fa-star fa-sm" style="color: #0065ef;"></i>
+                                <i class="fa-solid fa-star fa-sm" style="color: #f2f2f2;"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-main">
+                        <img src="images/hebergements/reisetopia.jpg" alt="hotel du port">
+                        <div class="card-main-txt">
+                            <h3>Hôtel Les mouettes</h3>
+                            <p>Nuit à partir de 76<span>€</span></p>
+                            <div class="etoiles">
+                                <i class="fa-solid fa-star fa-sm" style="color: #0065ef;"></i>
+                                <i class="fa-solid fa-star fa-sm" style="color: #0065ef;"></i>
+                                <i class="fa-solid fa-star fa-sm" style="color: #0065ef;"></i>
+                                <i class="fa-solid fa-star fa-sm" style="color: #0065ef;"></i>
+                                <i class="fa-solid fa-star fa-sm" style="color: #f2f2f2;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-offers-main">
+                    <div class="card-main">
+                        <img src="images/hebergements/annie-spratt.jpg" alt="hotel du port">
+                        <div class="card-main-txt">
+                            <h3>Hôtel de la mer</h3>
+                            <p>Nuit à partir de 46<span>€</span></p>
+                            <div class="etoiles">
+                                <i class="fa-solid fa-star fa-sm" style="color: #0065ef;"></i>
+                                <i class="fa-solid fa-star fa-sm" style="color: #0065ef;"></i>
+                                <i class="fa-solid fa-star fa-sm" style="color: #0065ef;"></i>
+                                <i class="fa-solid fa-star fa-sm" style="color: #0065ef;"></i>
+                                <i class="fa-solid fa-star fa-sm" style="color: #f2f2f2;"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-main">
+                        <img src="images/hebergements/marcus-loke.jpg" alt="hotel du port">
+                        <div class="card-main-txt">
+                            <h3>Hôtel auberge La canebière</h3>
+                            <p>Nuit à partir de 25<span>€</span></p>
+                            <div class="etoiles">
+                                <i class="fa-solid fa-star fa-sm" style="color: #0065ef;"></i>
+                                <i class="fa-solid fa-star fa-sm" style="color: #0065ef;"></i>
+                                <i class="fa-solid fa-star fa-sm" style="color: #0065ef;"></i>
+                                <i class="fa-solid fa-star fa-sm" style="color: #0065ef;"></i>
+                                <i class="fa-solid fa-star fa-sm" style="color: #f2f2f2;"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-main">
+                        <img src="images/hebergements/nicate-lee.jpg" alt="hotel du port">
+                        <div class="card-main-txt">
+                            <h3>Hôtel Auberge Le Panier</h3>
+                            <p>Nuit à partir de 23<span>€</span></p>
+                            <div class="etoiles">
+                                <i class="fa-solid fa-star fa-sm" style="color: #0065ef;"></i>
+                                <i class="fa-solid fa-star fa-sm" style="color: #0065ef;"></i>
+                                <i class="fa-solid fa-star fa-sm" style="color: #0065ef;"></i>
+                                <i class="fa-solid fa-star fa-sm" style="color: #0065ef;"></i>
+                                <i class="fa-solid fa-star fa-sm" style="color: #f2f2f2;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2>Afficher plus</h2>
+            </div>
+            <div class="offers-sponsored">
+                <div class="titre-offers-sponsored">
+                    <h2>Les plus populaires</h2>
+                    <i class="fa-solid fa-chart-line fa-lg" style="color: #0065fc;"></i>
+                </div>
+                <div class="card-main-2">
+                    <img src="images/hebergements/emile-guillemot.jpg" alt="hotel du port">
+                    <div class="card-main-txt-2">
+                        <div class="txt">
+                            <h3>Hôtel Le solei du matin</h3>
+                            <p>Nuit à partir de 25<span>€</span></p>
+                        </div>
+                        <div class="etoiles-2">
+                            <i class="fa-solid fa-star fa-sm" style="color: #0065ef;"></i>
+                            <i class="fa-solid fa-star fa-sm" style="color: #0065ef;"></i>
+                            <i class="fa-solid fa-star fa-sm" style="color: #0065ef;"></i>
+                            <i class="fa-solid fa-star fa-sm" style="color: #0065ef;"></i>
+                            <i class="fa-solid fa-star fa-sm" style="color: #f2f2f2;"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-main-2">
+                    <img src="images/hebergements/aw-creative.jpg" alt="hotel du port">
+                    <div class="card-main-txt-2">
+                        <div class="txt">
+                            <h3>Au cœur de l’eau Chambres d’hôtes</h3>
+                            <p>Nuit à partir de 71<span>€</span></p>
+                        </div>
+                        <div class="etoiles-2">
+                            <i class="fa-solid fa-star fa-sm" style="color: #0065ef;"></i>
+                            <i class="fa-solid fa-star fa-sm" style="color: #0065ef;"></i>
+                            <i class="fa-solid fa-star fa-sm" style="color: #0065ef;"></i>
+                            <i class="fa-solid fa-star fa-sm" style="color: #0065ef;"></i>
+                            <i class="fa-solid fa-star fa-sm" style="color: #f2f2f2;"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-main-2">
+                    <img src="images/hebergements/febrian-zakaria2.jpg" alt="hotel du port">
+                    <div class="card-main-txt-2">
+                        <div class="txt">
+                            <h3>Hôtel Tout bleu et Blanc</h3>
+                            <p>Nuit à partir de 68<span>€</span></p>
+                        </div>
+                        <div class="etoiles-2">
+                            <i class="fa-solid fa-star fa-sm" style="color: #0065ef;"></i>
+                            <i class="fa-solid fa-star fa-sm" style="color: #0065ef;"></i>
+                            <i class="fa-solid fa-star fa-sm" style="color: #0065ef;"></i>
+                            <i class="fa-solid fa-star fa-sm" style="color: #0065ef;"></i>
+                            <i class="fa-solid fa-star fa-sm" style="color: #f2f2f2;"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section class="SectionActivites">
+            
 
         </section>
+
     </main>
 
     <footer>
 
     </footer>
-
+</div>
 </body>
 </html>
