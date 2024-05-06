@@ -688,6 +688,8 @@ footer a {
         min-width: 320px;
     }
 
+    /* Partie responsive header */
+
     header {
         height: 115px;
         flex-direction: column;
@@ -723,6 +725,8 @@ footer a {
         border-bottom: 2px #0065FC solid;
         color: #0065FC;
     }
+
+    /* Partie responsive groupe filtres */
 
     .InfoGroup {
         height: 432px;
@@ -807,6 +811,8 @@ footer a {
         min-width: 24px;
     }
 
+    /* Partie responsive cartes hebergements à marseille */
+
     .SectionGroup {
         height: 2019.5px;
         flex-direction: column-reverse;
@@ -861,6 +867,8 @@ footer a {
         width: 81px;
     }
 
+    /* Partie responsive Section des activites */
+
     .SectionActivites {
         height: 965.02px;
     }
@@ -880,6 +888,8 @@ footer a {
     .card-activite img {
         height: 141px;
     }
+
+    /* Partie responsive footer */
 
     footer {
         height: 461px;
