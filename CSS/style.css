@@ -133,10 +133,17 @@ h1 {
     border: 1px #F2F2F2 solid;
 }
 
+.texte-recherche {
+    display: flex;
+    width: 327px;
+    height: 49px;
+}
+
 .champ-saisie-recherche {
-    border: 1px #F2F2F2 solid;
+    border: none;
     width: 195px;
-    height: 100%;
+    height: 40px;
+    margin: auto 0px;
     text-align: center;
     font-size: 18px;
     font-weight: 700;
@@ -153,6 +160,7 @@ h1 {
     border-radius: 15px 0px 0px 15px;
     border: 1px #F2F2F2 solid;
     background-color: #D9D9D9;
+    flex-shrink: 0;
 }
 
 .icone-adrresse i {
@@ -161,11 +169,6 @@ h1 {
     position: relative;
     top: 15px;
     left: 18px;
-}
-
-.texte-recherche {
-    display: flex;
-    width: 327px;
 }
 
 .texte-recherche p {
@@ -740,16 +743,18 @@ footer a {
 
     .search-bar {
         width: 100%;
-        border: 1px #F2F2F2 solid;
+        max-width: 377px;
     }
 
     .icone-adrresse {
-        width: 15%;
-        min-width: 50px;
+        width: 13%;          
+        max-width: 50px;
     }
 
+
     .texte-recherche {
-        width: 100%;
+        width: 87%;
+        max-width: 327px;
     }
 
     .champ-saisie-recherche {
