@@ -150,8 +150,9 @@ h1 {
     line-height: 21.13px;
 }
 
-.champ-saisie-recherche::-webkit-input-placeholder {
+.champ-saisie-recherche::placeholder {
     color: #000000;
+    opacity: 1;
   }
 
 .champ-saisie-recherche:focus {
