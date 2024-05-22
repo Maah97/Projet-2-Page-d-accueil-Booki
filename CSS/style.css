@@ -32,6 +32,10 @@ i {
     color: #F2F2F2;
 }
 
+img {
+    object-fit: cover;
+}
+
 /* Style du header */
 
 header {
