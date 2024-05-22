@@ -748,12 +748,12 @@ footer a {
 
     .search-bar {
         width: 100%;
-        max-width: 377px;
+        /* max-width: 377px; */
     }
     
     .texte-recherche {
-        width: 87%;
-        max-width: 327px;
+        width: 100%;
+        /* max-width: 327px; */
     }
 
     .champ-saisie-recherche {
@@ -820,7 +820,6 @@ footer a {
     .SectionGroup {
         height: 2019.5px;
         flex-direction: column-reverse;
-        
     }
 
     .offers-sponsored {
